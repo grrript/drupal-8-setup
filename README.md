@@ -70,8 +70,8 @@ Note: Port number is 8889 if you are using MAMP.
 
 Then uncomment out this part in the settings.php file:
 
-'# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-'#   include $app_root . '/' . $site_path . '/settings.local.php';
-'# }
+<div># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {</div>
+<div>#   include $app_root . '/' . $site_path . '/settings.local.php';</div>
+<div># }</div>
 
 
