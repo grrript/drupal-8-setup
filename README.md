@@ -49,7 +49,9 @@ This will create a Drupal 8 database on your local MAMP using the db name and us
 This step also creates the database connection info in the settings.php file.
 
 
-## Step 6 - create a settings.local.php in sites/default folder with the database connection info created in the previous step. It would look like this:
+## Step 6 - create a settings.local.php 
+
+In the sites/default folder, create the settings.local.php file. Copy from settings.php   the folowing (using the database connection info created in the previous step):
 
 <div><code>$config_directories['sync'] = '../config/sync'; </code></div>
 <div><code>$databases['default']['default'] = array (</code></div>
@@ -66,11 +68,13 @@ This step also creates the database connection info in the settings.php file.
 
 Note: Port number is 8889 if you are using MAMP.
 
+Then paste into settings.local.php.
+
 
 ## Step 7 - Then uncomment out this part in the settings.php file:
 
-<div># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {</div>
-<div>#   include $app_root . '/' . $site_path . '/settings.local.php';</div>
-<div># }</div>
+<div><code># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {</code></div>
+<div><code>#   include $app_root . '/' . $site_path . '/settings.local.php';</code></div>
+<div><code># }</code></div>
 
 
