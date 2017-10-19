@@ -7,7 +7,7 @@ Run these commands on the terminal:
 <div><code>mv drupal.phar /usr/local/bin/drupal</code></div>
 <div><code>chmod +x /usr/local/bin/drupal</code></div>
 
-When finished, run this command:
+<div>When finished, run this command:</div>
 
 <code>drupal</code>
 
