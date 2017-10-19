@@ -51,8 +51,8 @@ This step also creates the database connection info in the settings.php file.
 
 ## Step 6 - create a settings.local.php in sites/default folder with the database connection info created in the previous step. It would look like this:
 
-<div><code> $config_directories['sync'] = '../config/sync'; </code></div>
-<div><code><$databases['default']['default'] = array (</code></div>
+<div><code>$config_directories['sync'] = '../config/sync'; </code></div>
+<div><code>$databases['default']['default'] = array (</code></div>
 <div><code> 'database' => 'enter_a_db_name',</code></div>
 <div><code>  'username' => 'enter_a_username',</code></div>
 <div><code>  'password' => 'enter_a_password',</code></div>
@@ -67,7 +67,7 @@ This step also creates the database connection info in the settings.php file.
 Note: Port number is 8889 if you are using MAMP.
 
 
-Then uncomment out this part in the settings.php file:
+## Step 7 - Then uncomment out this part in the settings.php file:
 
 <div># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {</div>
 <div>#   include $app_root . '/' . $site_path . '/settings.local.php';</div>
