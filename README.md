@@ -3,9 +3,9 @@
 ## Step 1  - Install Drupal Console Launcher
 Run these commands on the terminal:
 
-<code>curl https://drupalconsole.com/installer -L -o drupal.phar</code>
-<code>mv drupal.phar /usr/local/bin/drupal</code>
-<code>chmod +x /usr/local/bin/drupal</code>
+<div><code>curl https://drupalconsole.com/installer -L -o drupal.phar</code></div>
+<div><code>mv drupal.phar /usr/local/bin/drupal</code></div>
+<div><code>chmod +x /usr/local/bin/drupal</code></div>
 
 When finished, run this command:
 
@@ -52,18 +52,17 @@ This step also creates the database connection info in the settings.php file.
 ## Step 6 - create a settings.local.php in sites/default folder with the database connection info created in the previous step. It would look like this:
 
 <div><code> $config_directories['sync'] = '../config/sync'; </code></div>
-<div><code>$databases['default']['default'] = array (
-  'database' => 'enter_a_db_name',
-  'username' => 'enter_a_username',
-  'password' => 'enter_a_password',
-  'prefix' => '',
-  'host' => '127.0.0.1',
-  'port' => '8889',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
+<div><code><$databases['default']['default'] = array (</code></div>
+<div><code> 'database' => 'enter_a_db_name',</code></div>
+<div><code>  'username' => 'enter_a_username',</code></div>
+<div><code>  'password' => 'enter_a_password',</code></div>
+<div><code>  'prefix' => '',</code></div>
+<div><code>  'host' => '127.0.0.1',</code></div>
+<div><code>  'port' => '8889',</code></div>
+<div><code>  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql', </code></div>
+<div><code>  'driver' => 'mysql',</code></div>
 );
-$settings['install_profile'] = 'standard';
-</code></div>
+<div><code>$settings['install_profile'] = 'standard';</code></div>
 
 Note: Port number is 8889 if you are using MAMP.
 
