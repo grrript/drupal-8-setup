@@ -70,7 +70,7 @@ Under the <code>my_site/sites/default</code> folder, create the <code>settings.l
 
 <pre><code>touch settings.local.php</code></pre>
 
-Copy from <code>settings.php</code>   the following (using the database connection info created in the previous step):
+Remove from <code>settings.php</code>   the following code that starts with <code>$config_directories['sync']</code>:
 
 <pre>
 <code><</code><code>?</code><code>php</code>
@@ -91,12 +91,14 @@ $settings['install_profile'] = 'standard';
 </code>
 </pre>
 
-then paste them into <code>settings.local.php</code>. Note that the <code><?php</code> must appear at the very beginning of the <code>settings.local.php</code>
+then paste them into <code>settings.local.php</code>. Note that the <code><?php</code> must appear at the very beginning of the <code>settings.local.php</code> file.
 
 Note: Port number is <code>8889</code> if you are using MAMP. Also, note database name, username, and password are unique to this Drupal project.
 
 
 ## Step 7 - Then uncomment these lines in the settings.php file:
+
+If you did step 6, then you must uncomment a few lines in the <code>settings.php</code> file: 
 
 <pre><code># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
