@@ -64,7 +64,11 @@ This step also creates the database connection info in the <code>sites/default/s
 
 In the <code>sites/default</code> folder, create the <code>settings.local.php</code> file. Copy from <code>settings.php</code>   the folowing (using the database connection info created in the previous step):
 
-<pre><code>$config_directories['sync'] = '../config/sync'; 
+<pre><code>
+<?php
+
+$config_directories['sync'] = '../config/sync'; 
+
 $databases['default']['default'] = array (
   'database' => 'enter_a_db_name',
   'username' => 'enter_a_username',
@@ -77,9 +81,9 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';</code></pre>
 
-Note: Port number is <code>8889</code> if you are using MAMP.
+then paste them into <code>settings.local.php</code>.
 
-Then paste them into <code>settings.local.php</code>.
+Note: Port number is <code>8889</code> if you are using MAMP. Also, note database name, username, and password are unique to this Drupal project.
 
 
 ## Step 7 - Then uncomment out this part in the settings.php file:
