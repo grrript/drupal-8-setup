@@ -49,9 +49,9 @@ where <code>my_site</code> is the project folder name.
 
 ## Step 5 - Install the new Drupal site
 
-Run this command on the terminal:
+Under the folder <code>~/sites/my_site</code>, run this command on the terminal:
 
-<code>drupal site:install</code>
+<pre><code>drupal site:install</code></pre>
 
 Follow the instructions on the screen. You will be asked for database user and password. This is the user name and password for the MYSQL databases (not the credentials for the Drupal site).
 
