@@ -16,7 +16,7 @@ When finished, run this command on any directory:
 This will list the available commands.
 
 
-## Step 2 - Initialize Drupal console configuration
+## Step 2 - Initialize configuration for Drupal Console
 
 <pre><code>drupal init --override</code></pre>
 
