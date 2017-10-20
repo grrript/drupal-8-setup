@@ -30,7 +30,7 @@ On the terminal, go to the root directory where you create your sites in your lo
 <pre><code>cd ~/sites</code></pre>
 
 
-## Step 4  - Install drupal console on the Drupal site.
+## Step 4  - Install Drupal Console on the Drupal site.
 
 Drupal console must be installed for EVERY Drupal site.
 
@@ -38,7 +38,9 @@ Run this command on the terminal:
 
 <pre><code>composer create-project drupal-composer/drupal-project:8.x-dev my_site --prefer-dist --no-progress --no-interaction</code></pre>
 
-where <code>my_site</code> is the root folder of the Drupal 8 project you are about to create. You decide what the  project folder name is. This step will set up the project composer config files and a folder called <code>'web'</code> where the drupal 8 codebase will be saved.
+where <code>my_site</code> is the root folder of the Drupal 8 project you are about to create. You decide what the  project folder name is. 
+
+This step will do 2 things: set up the project composer config files (like the composer.json file) and a folder called <code>'web'</code> where the drupal 8 codebase will be saved.
 
 Go the the Drupal project directory: 
 
