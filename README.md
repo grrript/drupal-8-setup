@@ -25,7 +25,7 @@ Follow the prompts.
 
 ## Step 3 - Go to your projects directory
 
-On the terminal, go to the root directory where you create your sites in your local environment. This root directory could be named 'sites' for example. So run this command: 
+On the terminal, go to the root directory where you create your sites in your local environment. This root directory could be named <code>'sites'</code> for example. So run this command: 
 
 <pre><code>cd ~/sites</code></pre>
 
