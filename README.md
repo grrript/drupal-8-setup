@@ -23,7 +23,7 @@ This will list the available commands.
 Follow the prompts.
 
 
-## Step 3 - Go to your projects directory
+## Step 3 - Go to your site projects directory
 
 On the terminal, go to the root directory where you create your sites in your local environment. You probably have named this root directory to be <code>'sites'</code> for example. Go to the <code>'sites'</code> directory: 
 
