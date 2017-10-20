@@ -34,7 +34,7 @@ On the terminal, go to the root directory where you create your sites in your lo
 
 ## Step 4  - Install Drupal Console on the Drupal site.
 
-Drupal console must be installed for EVERY Drupal site.
+Drupal Console must be installed for EVERY Drupal site.
 
 Run this command on the terminal:
 
