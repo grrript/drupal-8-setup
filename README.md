@@ -91,7 +91,7 @@ $settings['install_profile'] = 'standard';
 </code>
 </pre>
 
-then paste them into <code>settings.local.php</code>.
+then paste them into <code>settings.local.php</code>. Note that the <code><?php</code> must appear at the very beginning of the <code>settings.local.php</code>
 
 Note: Port number is <code>8889</code> if you are using MAMP. Also, note database name, username, and password are unique to this Drupal project.
 
