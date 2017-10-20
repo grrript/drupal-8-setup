@@ -40,7 +40,7 @@ Run this command on the terminal:
 
 where <code>my_site</code> is the root folder of the Drupal 8 project you are about to create. You decide what the  project folder name is. This step will set up the project composer config files and a folder called <code>'web'</code> where the drupal 8 codebase will be saved.
 
-Go the the project directory: 
+Go the the Drupal project directory: 
 
 <pre><code> cd ~/sites/my_site </code></pre>
 
@@ -62,7 +62,7 @@ This step also creates the database connection info in the <code>sites/default/s
 
 ## Step 6 - Create a settings.local.php file (optional)
 
-Under the <code>sites/default</code> folder, create the <code>settings.local.php</code> file:
+Under the <code>my_site/sites/default</code> folder, create the <code>settings.local.php</code> file:
 
 <pre><code>touch settings.local.php</code></pre>
 
