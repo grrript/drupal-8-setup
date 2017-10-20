@@ -1,39 +1,50 @@
-# drupal-8-setup  - for Mac
+# How to install Drupal Console for Mac and How to set up Drupal 8 on a local environment
 
-## Step 1  - Install Drupal Console Launcher
+## Requirements: Install Drupal Console Launcher globally
+
+## Step 1  - Install Drupal Console Launcher globally
 Run these commands on the terminal:
 
-<div><code>curl https://drupalconsole.com/installer -L -o drupal.phar</code></div>
-<div><code>mv drupal.phar /usr/local/bin/drupal</code></div>
-<div><code>chmod +x /usr/local/bin/drupal</code></div>
+<pre><code>curl https://drupalconsole.com/installer -L -o drupal.phar
+mv drupal.phar /usr/local/bin/drupal
+chmod +x /usr/local/bin/drupal</code></pre>
 
-<div>When finished, run this command:</div>
+When finished, run this command on any directory:
 
-<code>drupal</code>
+<pre><code>drupal</code></pre>
 
-to check if the install worked.
+This will list the available commands.
 
 
-## Step 2 - Go to your projects directory
+## Step 2 - Initialize Drupal console configuration
 
-On the terminal, go to the directory where you create your sites in your local environment. Say you create your sites under this directory structure: 
+<pre><code>drupal init --override</code></pre>
 
-<code>cd ~/sites</code>
+Follow the prompts.
 
-## Step 3  - install drupal console
+
+## Step 3 - Go to your projects directory
+
+On the terminal, go to the root directory where you create your sites in your local environment. This root directory could be named 'sites' for example. So run this command: 
+
+<pre><code>cd ~/sites</code></pre>
+
+
+## Step 4  - Install drupal console on the Drupal site.
+
+Drupal console must be installed for EVERY Drupal site.
 
 Run this command on the terminal:
 
-<code>composer create-project drupal-composer/drupal-project:8.x-dev my_site --prefer-dist --no-progress --no-interaction</code>
+<pre><code>composer create-project drupal-composer/drupal-project:8.x-dev my_site --prefer-dist --no-progress --no-interaction</code></pre>
 
-(where 'my_site' is the root folder of the Drupal 8 project you are about to create. You decide what the  project folder name is).
+where <code>my_site</code> is the root folder of the Drupal 8 project you are about to create. You decide what the  project folder name is. This step will set up the project composer config files and a folder called <code>'web'</code> where the drupal 8 codebase will be saved.
 
+Then run this command: 
 
-## Step 4 - Go to the root directory of the Drupal site you just created from step 3.
+<pre><code> cd ~/sites/my_site </code></pre>
 
-If you used the folder name 'my_site', then run this command on the terminal:
-
-<code> cd ~/sites/my_site </code>
+where <code>my_site</code> is the project folder name.
 
 
 ## Step 5 - Install the new Drupal site
@@ -46,35 +57,35 @@ Follow the instructions on the screen. You will be asked for database user and p
 
 This will create a Drupal 8 database on your local MAMP using the db name and user/password you provided when you were prompted these info in the terminal.
 
-This step also creates the database connection info in the settings.php file.
+This step also creates the database connection info in the <code>sites/default/settings.php</code> file.
 
 
-## Step 6 - create a settings.local.php 
+## Step 6 - create a settings.local.php file (optional)
 
-In the sites/default folder, create the settings.local.php file. Copy from settings.php   the folowing (using the database connection info created in the previous step):
+In the <code>sites/default</code> folder, create the <code>settings.local.php</code> file. Copy from <code>settings.php</code>   the folowing (using the database connection info created in the previous step):
 
-<div><code>$config_directories['sync'] = '../config/sync'; </code></div>
-<div><code>$databases['default']['default'] = array (</code></div>
-<div><code> 'database' => 'enter_a_db_name',</code></div>
-<div><code>  'username' => 'enter_a_username',</code></div>
-<div><code>  'password' => 'enter_a_password',</code></div>
-<div><code>  'prefix' => '',</code></div>
-<div><code>  'host' => '127.0.0.1',</code></div>
-<div><code>  'port' => '8889',</code></div>
-<div><code>  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql', </code></div>
-<div><code>  'driver' => 'mysql',</code></div>
+<pre><code>$config_directories['sync'] = '../config/sync'; 
+$databases['default']['default'] = array (
+  'database' => 'enter_a_db_name',
+  'username' => 'enter_a_username',
+  'password' => 'enter_a_password',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '8889',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
 );
-<div><code>$settings['install_profile'] = 'standard';</code></div>
+$settings['install_profile'] = 'standard';</code></pre>
 
-Note: Port number is 8889 if you are using MAMP.
+Note: Port number is <code>8889</code> if you are using MAMP.
 
-Then paste into settings.local.php.
+Then paste them into <code>settings.local.php</code>.
 
 
 ## Step 7 - Then uncomment out this part in the settings.php file:
 
-<div><code># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {</code></div>
-<div><code>#   include $app_root . '/' . $site_path . '/settings.local.php';</code></div>
-<div><code># }</code></div>
+<pre><code># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+#   include $app_root . '/' . $site_path . '/settings.local.php';
+# }</code></pre>
 
 
