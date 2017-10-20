@@ -64,9 +64,9 @@ This step also creates the database connection info in the <code>sites/default/s
 
 In the <code>sites/default</code> folder, create the <code>settings.local.php</code> file. Copy from <code>settings.php</code>   the folowing (using the database connection info created in the previous step):
 
-<pre><code>
-<?php
-
+<pre>
+<code><?php</code>
+<code>
 $config_directories['sync'] = '../config/sync'; 
 
 $databases['default']['default'] = array (
@@ -79,7 +79,9 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['install_profile'] = 'standard';</code></pre>
+$settings['install_profile'] = 'standard';
+</code>
+</pre>
 
 then paste them into <code>settings.local.php</code>.
 
