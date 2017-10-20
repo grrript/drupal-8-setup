@@ -60,9 +60,13 @@ This will create a Drupal 8 database on your local MAMP using the db name and us
 This step also creates the database connection info in the <code>sites/default/settings.php</code> file.
 
 
-## Step 6 - create a settings.local.php file (optional)
+## Step 6 - Create a settings.local.php file (optional)
 
-In the <code>sites/default</code> folder, create the <code>settings.local.php</code> file. Copy from <code>settings.php</code>   the folowing (using the database connection info created in the previous step):
+Under the <code>sites/default</code> folder, create the <code>settings.local.php</code> file:
+
+<pre><code>touch settings.local.php</code></pre>
+
+Copy from <code>settings.php</code>   the folowing (using the database connection info created in the previous step):
 
 <pre>
 <code><</code><code>?</code><code>php</code>
