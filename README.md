@@ -25,7 +25,7 @@ Follow the prompts.
 
 ## Step 3 - Go to your projects directory
 
-On the terminal, go to the root directory where you create your sites in your local environment. This root directory could be named <code>'sites'</code> for example. So run this command: 
+On the terminal, go to the root directory where you create your sites in your local environment. You probably have named this root directory to be <code>'sites'</code> for example. Go to the <code>'sites'</code> directory: 
 
 <pre><code>cd ~/sites</code></pre>
 
@@ -40,7 +40,7 @@ Run this command on the terminal:
 
 where <code>my_site</code> is the root folder of the Drupal 8 project you are about to create. You decide what the  project folder name is. This step will set up the project composer config files and a folder called <code>'web'</code> where the drupal 8 codebase will be saved.
 
-Then run this command: 
+Go the the project directory: 
 
 <pre><code> cd ~/sites/my_site </code></pre>
 
