@@ -1,6 +1,6 @@
 # How to install Drupal Console for Mac and How to set up Drupal 8 on a local environment
 
-## Requirements: Install Drupal Console Launcher globally
+Requirements: Drupal Console Launcher
 
 ## Step 1  - Install Drupal Console Launcher globally
 Run these commands on the terminal:
