@@ -51,6 +51,8 @@ Run this command on the terminal:
 
 where <code>my_site</code> is the root folder of the Drupal 8 project you are about to create. You decide what the  project folder name is. 
 
+If you get an error message that composer is not a valid command, then you must install <code>Composer</code> first.
+
 This step will do 2 things: set up the project composer config files (like the composer.json file) and a folder called <code>'web'</code> where the drupal 8 codebase will be saved.
 
 Go the the Drupal project directory: 
