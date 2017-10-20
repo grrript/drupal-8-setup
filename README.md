@@ -65,7 +65,7 @@ This step also creates the database connection info in the <code>sites/default/s
 In the <code>sites/default</code> folder, create the <code>settings.local.php</code> file. Copy from <code>settings.php</code>   the folowing (using the database connection info created in the previous step):
 
 <pre>
-<code><?</code><code>php</code>
+<code><</code><code>?</code><code>php</code>
 <code>
 $config_directories['sync'] = '../config/sync'; 
 
