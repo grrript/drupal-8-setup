@@ -86,7 +86,7 @@ then paste them into <code>settings.local.php</code>.
 Note: Port number is <code>8889</code> if you are using MAMP. Also, note database name, username, and password are unique to this Drupal project.
 
 
-## Step 7 - Then uncomment out this part in the settings.php file:
+## Step 7 - Then uncomment these lines in the settings.php file:
 
 <pre><code># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
