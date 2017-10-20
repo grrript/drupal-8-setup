@@ -70,7 +70,7 @@ Under the <code>my_site/sites/default</code> folder, create the <code>settings.l
 
 <pre><code>touch settings.local.php</code></pre>
 
-Copy from <code>settings.php</code>   the folowing (using the database connection info created in the previous step):
+Copy from <code>settings.php</code>   the following (using the database connection info created in the previous step):
 
 <pre>
 <code><</code><code>?</code><code>php</code>
