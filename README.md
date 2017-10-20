@@ -15,7 +15,7 @@ When finished, run this command on any directory:
 
 <pre><code>drupal</code></pre>
 
-This will list the available commands.
+This will list the available commands if <code>Drupal Console Launcher</code> was installed successfully.
 
 
 ## Step 2 - Initialize configuration for Drupal Console
