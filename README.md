@@ -1,5 +1,7 @@
 # How to set up Drupal 8 on a local environment using Drupal Console  (for Mac OS X).
 
+Updated: 2017 Oct 19
+
 Requirements: Drupal Console Launcher and Composer
 
 ## Step 1  - Install Drupal Console Launcher globally
