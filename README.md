@@ -107,7 +107,7 @@ Note: Port number is <code>8889</code> if you are using MAMP. Also, note that da
 
 ## Step 7 - Then uncomment these lines in the settings.php file:
 
-If you did step 6, then you must uncomment a few lines in the <code>settings.php</code> file: 
+If you did step 6, then you must uncomment a few lines in the <code>settings.php</code> file by removing <code>'#'</code>: 
 
 <pre><code># if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
