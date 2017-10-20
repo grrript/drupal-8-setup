@@ -5,7 +5,16 @@ Updated: 2017 Oct 19
 Requirements: Drupal Console Launcher and Composer
 
 ## Step 1  - Install Drupal Console Launcher globally
-Run these commands on the terminal:
+
+Check if you may have already installed Drupal Console Launcher.
+
+Run this command on the terminal:
+
+<pre><code>drupal self-update</code></pre>
+
+If the command is not recognized, then <code>Drupal Console Launcher</code> has not been installed. 
+
+To intsall, run these commands on the terminal:
 
 <pre><code>curl https://drupalconsole.com/installer -L -o drupal.phar
 mv drupal.phar /usr/local/bin/drupal
